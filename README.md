@@ -8,7 +8,7 @@ Install mysql2 with the following command:
 Create a Dockerfile or copy the one in this repo.  
 Create a docker-compose.yml file with the desired settings.
 
-Build images and start containers:  
+Make sure Docker is running on your system. Build images and start containers:  
 `docker-compose up --build`
 
 Start using your containers. This app has a simple express server, that runs on port 8080 in the container, but the docker-compose file specifies the host port as 4000. That means if we want to make a network request to the server we need to use port 4000.  
